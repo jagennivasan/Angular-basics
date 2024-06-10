@@ -1,0 +1,14 @@
+<div class="grid place-items-center mt-5">
+    <h2 class="text-xl">List component</h2>
+    <div *ngIf="students.length > 0; then sList; else noList"></div>
+    <ng-template #sList>
+      <ul>
+        <li *ngFor="let student of students">{{ student }}</li>
+      </ul>
+    </ng-template>
+    <ng-template #noList>
+      <p class="text-red-500">No students data avalible/p></p>
+    </ng-template>
+    
+</div>
+

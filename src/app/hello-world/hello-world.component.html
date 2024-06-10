@@ -1,0 +1,104 @@
+<!-- ngfor -->
+
+<!-- <h1>{{title}}</h1>
+
+<div>
+    <table id="customers">
+        <thead>
+            <tr>
+                <th>sl.no</th>
+                <th>student name</th>
+                <th> class</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr 
+            [ngClass]="{'even':'o'}"
+            *ngFor="let student of students ;let i=index; let e=even ; let o=odd">
+                <td>{{i+1}}</td>
+                <td>{{student.name}}</td>
+                <td>{{student.class}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div> -->
+
+<!-- ng switch -->
+
+<!-- <input type="text" [(ngModel)]="num">
+<div [ngSwitch]="num">
+    <div *ngSwitchCase="'1'">one</div>
+    <div *ngSwitchCase="'2'">two</div>
+    <div *ngSwitchCase="'3'">three</div>
+</div> -->
+
+<!-- ng if -->
+
+<!-- <div>
+    <input type="checkbox"[(ngModel)]="showMe">
+
+</div>
+<div *ngIf="showMe; then thenBlock; else elseBlock">
+
+</div>
+<ng-template #thenBlock>
+    <p >showMe is checked</p>
+</ng-template>
+
+
+<ng-template #elseBlock>
+    <p >showMe is unchecked</p>
+</ng-template> -->
+
+<!-- ng class -->
+
+<!-- <input type="checkbox" [(ngModel)]="enableRed" />
+<div
+  [ngClass]="{
+    primary: enableRed
+  }"
+>
+  Sample text
+</div> -->
+
+<!-- ng style -->
+<!-- <div [ngStyle]="{'color':status=='error'?'red':'blue'}">welcome </div> -->
+
+<!-- <div [ngStyle]="{
+    'color':'red',
+    'font-size':'20px'
+}">more style</div> -->
+
+<!-- <input type="text"[(ngModel)]="color">
+<input type="text"[(ngModel)]="fontSize">
+
+<div [ngStyle]="{
+    'color':color,
+    'font-size':fontSize
+}">colors</div> -->
+
+<!-- pipes -->
+<!-- date pipe -->
+
+
+<!-- <h1>{{toDate}}</h1> -->
+<!-- <h1>{{toDate|date}}</h1> -->
+<!-- <h1>{{toDate|date:'medium'}}</h1> -->
+<!-- <h1>{{toDate|date:'fullDate'}}</h1> -->
+<!-- <h1>{{toDate|date:'short'}}</h1> -->
+<!-- <h1>{{toDate|date:'longDate'}}</h1> -->
+
+<!-- uppercase pipe -->
+
+<!-- <h1>{{message}}</h1>
+
+<h1>{{message|uppercase}}</h1>
+<h1>{{message|lowercase}}</h1> -->
+
+<!-- slice pipe -->
+
+<!-- <h1>{{message|slice:5:10}}</h1>
+<h1>{{message|slice:0:5}}</h1>
+
+<p>{{price}}</p>
+<p>{{price|currency:'INR':false}}</p> -->

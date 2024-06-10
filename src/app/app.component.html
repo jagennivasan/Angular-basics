@@ -1,0 +1,11 @@
+<h1 class="text-3xl font-bold">App component</h1>
+
+<!-- <app-form></app-form> -->
+
+<!-- <app-child></app-child> -->
+
+
+<input type="text"[(ngModel)]="title">
+<app-life-cycle [text]="title"></app-life-cycle>
+
+<router-outlet />

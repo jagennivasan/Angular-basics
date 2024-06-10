@@ -1,0 +1,10 @@
+<h2 class="text-xl text-center">Form component</h2>
+<div class="grid place-items-center ">
+    <form action="" class="shadow-lg p-5 border border-gray-400 flex flex-col gap-5 mt-5">
+        <label class="font-bold text-xl">Student list:</label>
+        <input type="text" class="border border-gray-900" name="student-name" [(ngModel)]="studentNames">
+        <button class="text-white bg-green-700 rounded-lg px-1 py-1 hover:bg-green-800 transition duration-200 ease-in-out" (click)="addStudent()">submit</button>
+    </form>
+</div>
+
+<app-list [studentsInput]="students"></app-list>
